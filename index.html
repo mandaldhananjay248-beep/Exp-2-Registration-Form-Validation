@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#3157d5">
+    <title>Create Your Account</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main class="page-shell">
+        <div class="ambient ambient-one" aria-hidden="true"></div>
+        <div class="ambient ambient-two" aria-hidden="true"></div>
+        <div class="ambient ambient-three" aria-hidden="true"></div>
+
+        <section class="container" aria-labelledby="pageTitle">
+            <div class="card-accent" aria-hidden="true"></div>
+            <div class="form-heading">
+                <span class="eyebrow"><span class="eyebrow-dot"></span> YOUR NEXT CHAPTER STARTS HERE</span>
+                <h1 id="pageTitle">Create Your <span>Account</span></h1>
+                <p class="subtitle">Register now and get started</p>
+            </div>
+
+            <form id="registrationForm" novalidate>
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="name">Full name <span>*</span></label>
+                        <div class="input-wrap">
+                            <svg class="field-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="3.5"></circle><path d="M5 20c.7-3.4 3.1-5.2 7-5.2s6.3 1.8 7 5.2"></path></svg>
+                            <input type="text" id="name" name="name" placeholder="e.g. Alex Morgan" autocomplete="name" required aria-describedby="nameError">
+                        </div>
+                        <span class="error" id="nameError" aria-live="polite"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email ID <span>*</span></label>
+                        <div class="input-wrap">
+                            <svg class="field-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="14" rx="3"></rect><path d="m5 7 7 5.5L19 7"></path></svg>
+                            <input type="email" id="email" name="email" placeholder="Enter your email address" autocomplete="email" required aria-describedby="emailError">
+                        </div>
+                        <span class="error" id="emailError" aria-live="polite"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone number <span>*</span></label>
+                        <div class="input-wrap">
+                            <svg class="field-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7.2 3.8h2.3l1.2 4-1.8 1.5a15 15 0 0 0 5.8 5.8l1.5-1.8 4 1.2v2.3c0 1.3-1 2.3-2.3 2.3A15.9 15.9 0 0 1 4.9 6.1c0-1.3 1-2.3 2.3-2.3Z"></path></svg>
+                            <input type="text" id="phone" name="phone" placeholder="10-digit phone number" autocomplete="tel" inputmode="numeric" required aria-describedby="phoneError">
+                        </div>
+                        <span class="error" id="phoneError" aria-live="polite"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="dob">Date of Birth <span>*</span></label>
+                        <div class="input-wrap">
+                            <svg class="field-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15" rx="2.5"></rect><path d="M7.5 3.5v3M16.5 3.5v3M3.5 9.5h17"></path><path d="m9.5 14 1.6 1.6 3.5-3.5"></path></svg>
+                            <input type="date" id="dob" name="dob" required aria-describedby="dobError">
+                        </div>
+                        <span class="error" id="dobError" aria-live="polite"></span>
+                    </div>
+
+                    <fieldset class="form-group gender-group wide-field" id="genderGroup" aria-describedby="genderError">
+                        <legend>Gender <span>*</span></legend>
+                        <div class="gender-options" role="radiogroup" aria-label="Gender">
+                            <label class="gender-option"><input type="radio" name="gender" value="Male" required><span class="radio-mark" aria-hidden="true"></span><span>Male</span></label>
+                            <label class="gender-option"><input type="radio" name="gender" value="Female" required><span class="radio-mark" aria-hidden="true"></span><span>Female</span></label>
+                            <label class="gender-option"><input type="radio" name="gender" value="Other" required><span class="radio-mark" aria-hidden="true"></span><span>Other</span></label>
+                            <label class="gender-option"><input type="radio" name="gender" value="Prefer not to say" required><span class="radio-mark" aria-hidden="true"></span><span>Prefer not to say</span></label>
+                        </div>
+                        <span class="error" id="genderError" aria-live="polite"></span>
+                    </fieldset>
+
+                    <div class="form-group wide-field">
+                        <label for="city">City <span>*</span></label>
+                        <div class="input-wrap">
+                            <svg class="field-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20V8l8-4v16M12 11h8v9M2.5 20h19"></path><path d="M7.5 9.5h1M7.5 13h1M7.5 16.5h1M15.5 14h1M15.5 17h1"></path></svg>
+                            <input type="text" id="city" name="city" placeholder="Enter your city" autocomplete="address-level2" required aria-describedby="cityError">
+                        </div>
+                        <span class="error" id="cityError" aria-live="polite"></span>
+                    </div>
+
+                    <div class="form-group wide-field address-group">
+                        <label for="address">Address <span>*</span></label>
+                        <div class="textarea-wrap">
+                            <svg class="field-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-6.1 7-12a7 7 0 1 0-14 0c0 5.9 7 12 7 12Z"></path><circle cx="12" cy="9" r="2.3"></circle></svg>
+                            <textarea id="address" name="address" placeholder="Enter your complete address" autocomplete="street-address" minlength="10" required aria-describedby="addressError"></textarea>
+                        </div>
+                        <span class="error" id="addressError" aria-live="polite"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="pincode">PIN code <span>*</span></label>
+                        <div class="input-wrap">
+                            <svg class="field-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 10c0 5-7 11-7 11S5 15 5 10a7 7 0 1 1 14 0Z"></path><circle cx="12" cy="10" r="2.2"></circle></svg>
+                            <input type="text" id="pincode" name="pincode" placeholder="6-digit PIN code" autocomplete="postal-code" inputmode="numeric" required aria-describedby="pincodeError">
+                        </div>
+                        <span class="error" id="pincodeError" aria-live="polite"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password">Password <span>*</span></label>
+                        <div class="input-wrap">
+                            <svg class="field-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="4.5" y="10" width="15" height="11" rx="2.5"></rect><path d="M8 10V7a4 4 0 0 1 8 0v3"></path></svg>
+                            <input type="password" id="password" name="password" placeholder="Create a strong password" autocomplete="new-password" required aria-describedby="passwordError">
+                            <button class="password-toggle" type="button" aria-label="Show password" aria-pressed="false" data-password-target="password">
+                                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2.5 12s3.4-6 9.5-6 9.5 6 9.5 6-3.4 6-9.5 6-9.5-6-9.5-6Z"></path><circle cx="12" cy="12" r="2.5"></circle><path class="eye-slash" d="m4 4 16 16"></path></svg>
+                            </button>
+                        </div>
+                        <span class="error" id="passwordError" aria-live="polite"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="confirmPassword">Confirm password <span>*</span></label>
+                        <div class="input-wrap">
+                            <svg class="field-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="4.5" y="10" width="15" height="11" rx="2.5"></rect><path d="M8 10V7a4 4 0 0 1 8 0v3"></path><path d="m9.5 15 1.7 1.7 3.5-3.5"></path></svg>
+                            <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Enter it once more" autocomplete="new-password" required aria-describedby="confirmPasswordError">
+                            <button class="password-toggle" type="button" aria-label="Show confirm password" aria-pressed="false" data-password-target="confirmPassword">
+                                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2.5 12s3.4-6 9.5-6 9.5 6 9.5 6-3.4 6-9.5 6-9.5-6-9.5-6Z"></path><circle cx="12" cy="12" r="2.5"></circle><path class="eye-slash" d="m4 4 16 16"></path></svg>
+                            </button>
+                        </div>
+                        <span class="error" id="confirmPasswordError" aria-live="polite"></span>
+                    </div>
+                </div>
+
+                <button class="submit-button" type="submit">
+                    <span>Register</span>
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>
+                </button>
+
+                <p id="successMessage" class="success" role="status" aria-live="polite"></p>
+            </form>
+
+            <p class="card-footnote"><span class="secure-mark" aria-hidden="true">✓</span> Your information is kept private and secure</p>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
