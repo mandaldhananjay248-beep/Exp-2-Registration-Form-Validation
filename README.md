@@ -142,4 +142,4 @@ Project: **Exp-2 — Registration Form Validation**
 
 ## 🔗 Repository
 
-[Exp-2 — Registration Form Validation on GitHub](https://github.com/mandaldhananjay248-beep/Exp-2-Registration-Form-Validation)
+https://github.com/mandaldhananjay248-beep/Exp-2-Registration-Form-Validation
